@@ -1,0 +1,39 @@
+{
+  "name": "space-invaders-vanilla-js-es6",
+  "version": "0.0.0",
+  "description": "Space Invaders Game written in Vanilla Javascript (EcmaScript 6)",
+  "main": "scripts/main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.9",
+    "gulp-browserify": "^0.5.0",
+    "gulp-connect": "^2.0.6",
+    "gulp-copy": "0.0.2",
+    "gulp-jade": "^0.9.0",
+    "gulp-open": "^0.3.0",
+    "gulp-stylus": "^1.3.3",
+    "gulp-uglify": "^1.0.1",
+    "gulp-traceur": "^0.13.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m4n3z40/space-invaders-vanilla-js-es6.git"
+  },
+  "keywords": [
+    "space",
+    "invaders",
+    "vanilla-js",
+    "js",
+    "javascript",
+    "es6"
+  ],
+  "author": "Allan Baptista (allan.marques@ymail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m4n3z40/space-invaders-vanilla-js-es6/issues"
+  },
+  "homepage": "https://github.com/m4n3z40/space-invaders-vanilla-js-es6"
+}
