@@ -25,13 +25,13 @@ export default class Input {
     }
 
     isRightPressed() {
-        var currKeys = this.currentKeys;
+        let currKeys = this.currentKeys;
 
         return RIGHT in currKeys && currKeys[RIGHT] === true;
     }
 
     isActionPressed() {
-        var currKeys = this.currentKeys;
+        let currKeys = this.currentKeys;
 
         return SPACE in currKeys && currKeys[SPACE] === true;
     }
