@@ -4,35 +4,29 @@
 
 export default class Input {
     constructor() {
-        this.currentKeys = {};
+        this.currentKeys = new Map;
 
         window.addEventListener('keyup', this.onKeyUp.bind(this));
         window.addEventListener('keydown', this.onKeyDown.bind(this));
     }
 
     onKeyUp(e) {
-        this.currentKeys[e.keyCode] = false;
+        this.currentKeys.set(e.keyCode, false);
     }
 
     onKeyDown(e) {
-        this.currentKeys[e.keyCode] = true;
+        this.currentKeys.set(e.keyCode, true);
     }
 
     isLeftPressed() {
-        let currKeys = this.currentKeys;
-
-        return LEFT in currKeys && currKeys[LEFT] === true;
+        return this.currentKeys.get(LEFT);
     }
 
     isRightPressed() {
-        let currKeys = this.currentKeys;
-
-        return RIGHT in currKeys && currKeys[RIGHT] === true;
+        return this.currentKeys.get(RIGHT);
     }
 
     isActionPressed() {
-        let currKeys = this.currentKeys;
-
-        return SPACE in currKeys && currKeys[SPACE] === true;
+        return this.currentKeys.get(SPACE);
     }
 }
